@@ -2,7 +2,12 @@ import { Star, Heart, ShieldCheck, Truck, Minus, Plus, ShoppingCart } from "luci
 import { useState } from "react";
 import CountdownTimer from "./CountdownTimer";
 
-const ProductInfo = () => {
+interface ProductInfoProps {
+  selectedColor: string;
+  onColorChange: (color: string) => void;
+}
+
+const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
   const [qty, setQty] = useState(1);
   const [liked, setLiked] = useState(false);
 
@@ -27,11 +32,34 @@ const ProductInfo = () => {
         </span>
       </div>
 
+      {/* Color Selector */}
+      <div className="space-y-2">
+        <span className="text-sm font-semibold text-foreground">Cor:</span>
+        <div className="flex gap-3">
+          <button
+            onClick={() => onColorChange("rosa")}
+            className={`w-10 h-10 rounded-full border-2 transition ${
+              selectedColor === "rosa" ? "border-store-blue ring-2 ring-store-blue/30" : "border-border"
+            }`}
+            style={{ background: "linear-gradient(135deg, #f472b6, #ec4899)" }}
+            title="Rosa"
+          />
+          <button
+            onClick={() => onColorChange("preto")}
+            className={`w-10 h-10 rounded-full border-2 transition ${
+              selectedColor === "preto" ? "border-store-blue ring-2 ring-store-blue/30" : "border-border"
+            }`}
+            style={{ background: "linear-gradient(135deg, #404040, #1a1a1a)" }}
+            title="Preto"
+          />
+        </div>
+      </div>
+
       {/* Price */}
       <div className="bg-card rounded-lg p-4 space-y-1.5 border border-border">
         <div className="flex items-center gap-3">
           <span className="bg-store-green text-primary-foreground text-xs font-bold px-2 py-0.5 rounded">
-            ECONOMIZE R$ 380,10
+            ECONOMIZE R$ 60,00
           </span>
           <button onClick={() => setLiked(!liked)}>
             <Heart
@@ -40,12 +68,12 @@ const ProductInfo = () => {
             />
           </button>
         </div>
-        <p className="text-sm text-muted-foreground line-through">R$ 560,00</p>
+        <p className="text-sm text-muted-foreground line-through">R$ 97,90</p>
         <p className="text-3xl font-black text-store-green">
-          R$ 179,90
+          R$ 37,90
         </p>
         <p className="text-xs text-muted-foreground">
-          ou 3x de <span className="font-bold">R$ 59,96</span> sem juros
+          ou 3x de <span className="font-bold">R$ 12,63</span> sem juros
         </p>
       </div>
 
