@@ -7,6 +7,7 @@ import BundleOffer from "@/components/store/BundleOffer";
 import FAQ from "@/components/store/FAQ";
 import ProductDescription from "@/components/store/ProductDescription";
 import Footer from "@/components/store/Footer";
+import StickyBuyBar from "@/components/store/StickyBuyBar";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       </main>
 
       <Footer />
+      <StickyBuyBar />
     </div>
   );
 };

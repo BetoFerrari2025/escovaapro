@@ -93,10 +93,15 @@ const ProductInfo = () => {
           </div>
         </div>
 
-        <button className="w-full bg-store-green hover:bg-store-green-dark text-primary-foreground font-extrabold text-lg py-4 rounded-lg transition-all animate-pulse-green flex items-center justify-center gap-2">
+        <a
+          href="https://adsroi.com.br/checkout/h20NOn?aff=[ID_AFILIADO]"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full bg-store-green hover:bg-store-green-dark text-primary-foreground font-extrabold text-lg py-4 rounded-lg transition-all animate-pulse-green flex items-center justify-center gap-2"
+        >
           <ShoppingCart size={22} />
           Comprar Agora
-        </button>
+        </a>
 
         <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
           <ShieldCheck size={14} className="text-store-green" />
