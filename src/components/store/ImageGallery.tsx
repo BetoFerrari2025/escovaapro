@@ -4,11 +4,9 @@ import productRosa from "@/assets/product-rosa.webp";
 import productPreto from "@/assets/product-preto.webp";
 import productPretaRosa from "@/assets/product-preta-rosa.jfif";
 import productPretoSolo from "@/assets/product-preto-solo.webp";
-import productDoisPretos from "@/assets/product-dois-pretos.avif";
-
 const imagesByColor: Record<string, string[]> = {
   rosa: [productRosa, productPretaRosa, productPretoSolo],
-  preto: [productPreto, productPretaRosa, productDoisPretos],
+  preto: [productPreto, productPretaRosa, productPretoSolo],
 };
 
 interface ImageGalleryProps {
