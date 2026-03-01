@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import productMain from "@/assets/product-main.png";
-import productModel from "@/assets/product-model.png";
-import productResult from "@/assets/product-result.png";
+import productRosa from "@/assets/product-rosa.webp";
+import productPreto from "@/assets/product-preto.webp";
+import productPretaRosa from "@/assets/product-preta-rosa.jfif";
+import productDoisRosas from "@/assets/product-dois-rosas.avif";
+import productDoisPretos from "@/assets/product-dois-pretos.avif";
 
-const images = [productMain, productModel, productResult, productMain];
+const images = [productRosa, productPreto, productPretaRosa, productDoisRosas, productDoisPretos];
 
 const ImageGallery = () => {
   const [selected, setSelected] = useState(0);
