@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import productRosa from "@/assets/product-rosa.webp";
 import productPreto from "@/assets/product-preto.webp";
@@ -6,17 +6,28 @@ import productPretaRosa from "@/assets/product-preta-rosa.jfif";
 import productDoisRosas from "@/assets/product-dois-rosas.avif";
 import productDoisPretos from "@/assets/product-dois-pretos.avif";
 
-const images = [productRosa, productPreto, productPretaRosa, productDoisRosas, productDoisPretos];
+const imagesByColor: Record<string, string[]> = {
+  rosa: [productRosa, productPretaRosa, productDoisRosas],
+  preto: [productPreto, productPretaRosa, productDoisPretos],
+};
 
-const ImageGallery = () => {
+interface ImageGalleryProps {
+  selectedColor: string;
+}
+
+const ImageGallery = ({ selectedColor }: ImageGalleryProps) => {
+  const images = imagesByColor[selectedColor] || imagesByColor.rosa;
   const [selected, setSelected] = useState(0);
+
+  useEffect(() => {
+    setSelected(0);
+  }, [selectedColor]);
 
   const prev = () => setSelected((s) => (s === 0 ? images.length - 1 : s - 1));
   const next = () => setSelected((s) => (s === images.length - 1 ? 0 : s + 1));
 
   return (
     <div className="w-full">
-      {/* Main image */}
       <div className="relative bg-card rounded-lg overflow-hidden aspect-square flex items-center justify-center">
         <img
           src={images[selected]}
@@ -37,7 +48,6 @@ const ImageGallery = () => {
         </button>
       </div>
 
-      {/* Thumbnails */}
       <div className="flex gap-2 mt-3 overflow-x-auto pb-1">
         {images.map((img, i) => (
           <button
