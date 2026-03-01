@@ -1,4 +1,4 @@
-import { Star, Heart, ShieldCheck, Truck, Minus, Plus, ShoppingCart } from "lucide-react";
+import { Star, Heart, ShieldCheck, Truck, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import CountdownTimer from "./CountdownTimer";
 
@@ -8,7 +8,6 @@ interface ProductInfoProps {
 }
 
 const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
-  const [qty, setQty] = useState(1);
   const [liked, setLiked] = useState(false);
 
   return (
@@ -102,24 +101,6 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
 
       {/* Quantity + Buy */}
       <div className="space-y-3">
-        <div className="flex items-center gap-3">
-          <span className="text-sm font-semibold text-foreground">Qtd:</span>
-          <div className="flex items-center border border-border rounded-lg overflow-hidden">
-            <button
-              onClick={() => setQty(Math.max(1, qty - 1))}
-              className="px-3 py-2 hover:bg-muted transition"
-            >
-              <Minus size={14} />
-            </button>
-            <span className="px-4 py-2 text-sm font-bold border-x border-border">{qty}</span>
-            <button
-              onClick={() => setQty(qty + 1)}
-              className="px-3 py-2 hover:bg-muted transition"
-            >
-              <Plus size={14} />
-            </button>
-          </div>
-        </div>
 
         <a
           href="https://adsroi.com.br/checkout/h20NOn?aff=[ID_AFILIADO]"
