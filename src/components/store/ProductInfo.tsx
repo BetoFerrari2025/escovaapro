@@ -69,10 +69,10 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
         </div>
         <p className="text-sm text-muted-foreground line-through">R$ 97,90</p>
         <p className="text-3xl font-black text-store-green">
-          R$ 19,90
+          R$ 10,07
         </p>
         <p className="text-xs text-muted-foreground">
-          ou 3x de <span className="font-bold">R$ 6,63</span> sem juros
+          ou 3x de <span className="font-bold">R$ 3,36</span> sem juros
         </p>
       </div>
 

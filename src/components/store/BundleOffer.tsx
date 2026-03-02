@@ -44,12 +44,12 @@ const BundleOffer = () => {
             Leve mais, pague menos
           </span>
           <p className="text-sm text-muted-foreground line-through">R$ 75,80</p>
-          <p className="text-2xl font-black text-store-green">R$ 29,90</p>
+          <p className="text-2xl font-black text-store-green">R$ 18,99</p>
           <p className="text-[11px] text-muted-foreground mt-1">
-            ou 3x de R$ 9,97 sem juros
+            ou 3x de R$ 6,33 sem juros
           </p>
           <p className="text-[11px] text-store-green font-bold mt-0.5">
-            Cada produto sai por apenas R$ 14,95
+            Cada produto sai por apenas R$ 9,50
           </p>
           <p className="flex items-center gap-1 text-xs text-store-green font-bold mt-2">
             <Check size={14} /> Frete Grátis incluso nesta promoção
@@ -62,7 +62,7 @@ const BundleOffer = () => {
             className="mt-3 w-full bg-store-green hover:bg-store-green-dark text-primary-foreground font-extrabold py-3 rounded-lg transition flex items-center justify-center gap-2"
           >
             <ShoppingCart size={18} />
-            Comprar junto - R$ 29,90
+            Comprar junto - R$ 18,99
           </a>
 
           <div className="mt-3 space-y-1.5 text-xs text-foreground/70">
