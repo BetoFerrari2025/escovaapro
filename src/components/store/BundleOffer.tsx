@@ -13,13 +13,13 @@ const BundleOffer = () => {
         {/* Product 1 - Rosa */}
         <div className="bg-muted rounded-lg p-3 text-center relative">
           <span className="absolute -top-2 -left-2 bg-store-blue text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded">
-            R$ 37,90
+            R$ 10,07
           </span>
           <div className="w-20 h-20 mx-auto">
             <img src={productRosa} alt="Escova Rosa" className="w-full h-full object-contain" />
           </div>
           <p className="text-xs font-bold mt-2 text-foreground">Escova Alisadora - Rosa</p>
-          <p className="text-xs text-muted-foreground">R$ 37,90</p>
+          <p className="text-xs text-muted-foreground">R$ 10,07</p>
         </div>
 
         <span className="text-2xl font-black text-muted-foreground text-center">+</span>
@@ -27,13 +27,13 @@ const BundleOffer = () => {
         {/* Product 2 - Preto */}
         <div className="bg-muted rounded-lg p-3 text-center relative">
           <span className="absolute -top-2 -left-2 bg-store-green text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded">
-            R$ 37,90
+            R$ 10,07
           </span>
           <div className="w-20 h-20 mx-auto">
             <img src={productPreto} alt="Escova Preta" className="w-full h-full object-contain" />
           </div>
           <p className="text-xs font-bold mt-2 text-foreground">Escova Alisadora - Preto</p>
-          <p className="text-xs text-muted-foreground">R$ 37,90</p>
+          <p className="text-xs text-muted-foreground">R$ 10,07</p>
         </div>
 
         <span className="text-2xl font-black text-muted-foreground text-center">=</span>
