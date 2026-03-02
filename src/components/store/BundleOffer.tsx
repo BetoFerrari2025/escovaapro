@@ -69,7 +69,7 @@ const BundleOffer = () => {
             <p className="font-bold">Com 2 unidades você pode:</p>
             <p className="flex items-center gap-1"><Check size={12} className="text-store-green" /> Presentear alguém especial</p>
             <p className="flex items-center gap-1"><Check size={12} className="text-store-green" /> Ter um produto extra</p>
-            <p className="flex items-center gap-1"><Check size={12} className="text-store-green" /> Economize R$ 17,90 no combo</p>
+            <p className="flex items-center gap-1"><Check size={12} className="text-store-green" /> Economize R$ 1,15 no combo</p>
           </div>
         </div>
       </div>
