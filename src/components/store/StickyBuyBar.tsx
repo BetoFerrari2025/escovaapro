@@ -21,7 +21,7 @@ const StickyBuyBar = () => {
         className="w-full bg-store-green hover:bg-store-green-dark text-primary-foreground font-extrabold text-base py-3.5 rounded-lg animate-pulse-green flex items-center justify-center gap-2"
       >
         <ShoppingCart size={20} />
-        Comprar Agora - R$ 19,90
+        Comprar Agora - R$ 10,07
       </a>
     </div>
   );
