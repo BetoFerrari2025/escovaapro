@@ -58,7 +58,7 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
       <div className="bg-card rounded-lg p-4 space-y-1.5 border border-border">
         <div className="flex items-center gap-3">
           <span className="bg-store-green text-primary-foreground text-xs font-bold px-2 py-0.5 rounded">
-            ECONOMIZE R$ 60,00
+            ECONOMIZE R$ 78,00
           </span>
           <button onClick={() => setLiked(!liked)}>
             <Heart
@@ -69,10 +69,10 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
         </div>
         <p className="text-sm text-muted-foreground line-through">R$ 97,90</p>
         <p className="text-3xl font-black text-store-green">
-          R$ 37,90
+          R$ 19,90
         </p>
         <p className="text-xs text-muted-foreground">
-          ou 3x de <span className="font-bold">R$ 12,63</span> sem juros
+          ou 3x de <span className="font-bold">R$ 6,63</span> sem juros
         </p>
       </div>
 
