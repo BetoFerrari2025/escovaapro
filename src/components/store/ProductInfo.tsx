@@ -58,7 +58,7 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
       <div className="bg-card rounded-lg p-4 space-y-1.5 border border-border">
         <div className="flex items-center gap-3">
           <span className="bg-store-green text-primary-foreground text-xs font-bold px-2 py-0.5 rounded">
-            ECONOMIZE R$ 78,00
+            ECONOMIZE R$ 87,83
           </span>
           <button onClick={() => setLiked(!liked)}>
             <Heart
