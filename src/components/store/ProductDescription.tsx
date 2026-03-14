@@ -1,4 +1,9 @@
-import { useState } from "react";
+import gifResultado1 from "@/assets/gif-resultado-1.gif";
+import gifResultado2 from "@/assets/gif-resultado-2.gif";
+import resultado1 from "@/assets/resultado-espelho-1.jpg";
+import resultado2 from "@/assets/resultado-espelho-2.jpg";
+import resultado3 from "@/assets/resultado-espelho-3.jpg";
+
 
 const ProductDescription = () => {
   return (
