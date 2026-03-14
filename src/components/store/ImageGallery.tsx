@@ -1,25 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import productRosa from "@/assets/product-rosa.webp";
-import productPreto from "@/assets/product-preto.webp";
-import productPretaRosa from "@/assets/product-preta-rosa.jfif";
-import productPretoSolo from "@/assets/product-preto-solo.webp";
-const imagesByColor: Record<string, string[]> = {
-  rosa: [productRosa, productPretaRosa, productPretoSolo],
-  preto: [productPreto, productPretaRosa, productPretoSolo],
-};
+import tintaEspelho1 from "@/assets/tinta-espelho-1.png";
+import tintaEspelho2 from "@/assets/tinta-espelho-2.png";
+import tintaEspelho3 from "@/assets/tinta-espelho-3.png";
+import resultado1 from "@/assets/resultado-espelho-1.jpg";
+import resultado2 from "@/assets/resultado-espelho-2.jpg";
+import resultado3 from "@/assets/resultado-espelho-3.jpg";
+
+const images = [tintaEspelho1, tintaEspelho3, tintaEspelho2, resultado1, resultado2, resultado3];
 
 interface ImageGalleryProps {
-  selectedColor: string;
+  selectedColor?: string;
 }
 
 const ImageGallery = ({ selectedColor }: ImageGalleryProps) => {
-  const images = imagesByColor[selectedColor] || imagesByColor.rosa;
   const [selected, setSelected] = useState(0);
-
-  useEffect(() => {
-    setSelected(0);
-  }, [selectedColor]);
 
   const prev = () => setSelected((s) => (s === 0 ? images.length - 1 : s - 1));
   const next = () => setSelected((s) => (s === images.length - 1 ? 0 : s + 1));
@@ -29,7 +24,7 @@ const ImageGallery = ({ selectedColor }: ImageGalleryProps) => {
       <div className="relative bg-card rounded-lg overflow-hidden aspect-square flex items-center justify-center">
         <img
           src={images[selected]}
-          alt="Escova Alisadora PureGlam"
+          alt="Tinta Espelho - Efeito Reflexo Ultra"
           className="w-full h-full object-contain p-4"
         />
         <button
