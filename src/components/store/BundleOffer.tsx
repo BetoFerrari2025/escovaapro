@@ -69,7 +69,7 @@ const BundleOffer = () => {
             <p className="font-bold">Com 2 latas você pode:</p>
             <p className="flex items-center gap-1"><Check size={12} className="text-store-green" /> Pintar mais cômodos</p>
             <p className="flex items-center gap-1"><Check size={12} className="text-store-green" /> Presentear alguém especial</p>
-            <p className="flex items-center gap-1"><Check size={12} className="text-store-green" /> Economize R$ 29,90 no combo</p>
+            <p className="flex items-center gap-1"><Check size={12} className="text-store-green" /> Economize R$ 11,90 no combo</p>
           </div>
         </div>
       </div>
