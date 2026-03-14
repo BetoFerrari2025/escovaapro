@@ -43,13 +43,13 @@ const BundleOffer = () => {
           <span className="inline-block bg-store-yellow text-foreground text-xs font-black px-2 py-0.5 rounded mb-2 uppercase">
             Leve mais, pague menos
           </span>
-          <p className="text-sm text-muted-foreground line-through">R$ 179,80</p>
-          <p className="text-2xl font-black text-store-green">R$ 149,90</p>
+          <p className="text-sm text-muted-foreground line-through">R$ 79,80</p>
+          <p className="text-2xl font-black text-store-green">R$ 67,90</p>
           <p className="text-[11px] text-muted-foreground mt-1">
-            ou 3x de R$ 49,97 sem juros
+            ou 3x de R$ 22,63 sem juros
           </p>
           <p className="text-[11px] text-store-green font-bold mt-0.5">
-            Cada lata sai por apenas R$ 74,95
+            Cada lata sai por apenas R$ 33,95
           </p>
           <p className="flex items-center gap-1 text-xs text-store-green font-bold mt-2">
             <Check size={14} /> Frete Grátis incluso nesta promoção
