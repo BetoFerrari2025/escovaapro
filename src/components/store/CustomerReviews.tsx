@@ -1,31 +1,32 @@
 import { Star, ThumbsUp } from "lucide-react";
 import { useState } from "react";
-import productModel from "@/assets/product-model.png";
-import productResult from "@/assets/product-result.png";
+import resultado1 from "@/assets/resultado-espelho-1.jpg";
+import resultado2 from "@/assets/resultado-espelho-2.jpg";
+import resultado3 from "@/assets/resultado-espelho-3.jpg";
 
 const reviews = [
   {
-    name: "Silvana Gonçalves",
-    date: "12/01/2025",
+    name: "Carlos Eduardo",
+    date: "10/03/2026",
     rating: 5,
-    text: "Excelente produto. Funciona tudo como descrito. Estou amando, faz liso bem, cabelo fica lindo e brilhoso, chega rápido sim.",
-    helpful: 49,
-    image: productModel,
+    text: "Incrível! Apliquei na parede da sala e ficou parecendo um espelho de verdade. Todos os visitantes ficam impressionados. Super recomendo!",
+    helpful: 234,
+    image: resultado1,
   },
   {
-    name: "Maria Moreira",
-    date: "08/01/2025",
+    name: "Fernanda Lima",
+    date: "05/03/2026",
     rating: 5,
-    text: "Melhor compra que fiz! Meu cabelo ficou liso perfeito em casa, super fácil de usar. Recomendo!",
-    helpful: 198,
+    text: "Melhor compra que fiz para minha casa! O acabamento espelhado ficou perfeito no corredor, deu uma sensação de amplitude incrível.",
+    helpful: 189,
   },
   {
-    name: "Raquel Silveira",
-    date: "05/01/2025",
+    name: "Roberto Santos",
+    date: "01/03/2026",
     rating: 5,
-    text: "Chegou no prazo. Bem embalada. A textura é profissional. Bom alisar, liso lindo, duradouro. Maravilhosa!",
-    helpful: 122,
-    image: productResult,
+    text: "Usei no salão de beleza e ficou maravilhoso! As clientes adoraram. Parece que instalei espelhos enormes na parede. Chegou rápido e bem embalado.",
+    helpful: 156,
+    image: resultado2,
   },
 ];
 
@@ -48,10 +49,10 @@ const CustomerReviews = () => {
               <Star key={s} size={14} className="fill-store-yellow text-store-yellow" />
             ))}
           </div>
-          <p className="text-[10px] text-muted-foreground mt-0.5">1.175 avaliações</p>
+          <p className="text-[10px] text-muted-foreground mt-0.5">2.341 avaliações</p>
         </div>
         <div className="flex gap-1.5 overflow-x-auto flex-1">
-          {[productModel, productResult, productModel, productResult].map((img, i) => (
+          {[resultado1, resultado2, resultado3, resultado1].map((img, i) => (
             <div key={i} className="w-14 h-14 rounded-md overflow-hidden flex-shrink-0 border border-border">
               <img src={img} alt={`Foto cliente ${i + 1}`} className="w-full h-full object-cover" />
             </div>

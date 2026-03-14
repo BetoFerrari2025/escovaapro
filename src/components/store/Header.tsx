@@ -5,8 +5,8 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const categories = [
-    "Ofertas do Dia", "#TudoPraCabelo", "Maquiagem", "Beleza",
-    "Cuidado pessoal", "Utilidades", "Casa & Jardim", "Limpeza"
+    "Ofertas do Dia", "Tintas", "Decoração", "Casa & Jardim",
+    "Ferramentas", "Iluminação", "Pisos", "Utilidades"
   ];
 
   return (

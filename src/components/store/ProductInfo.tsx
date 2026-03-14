@@ -2,12 +2,7 @@ import { Star, Heart, ShieldCheck, Truck, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import CountdownTimer from "./CountdownTimer";
 
-interface ProductInfoProps {
-  selectedColor: string;
-  onColorChange: (color: string) => void;
-}
-
-const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
+const ProductInfo = () => {
   const [liked, setLiked] = useState(false);
 
   return (
@@ -15,50 +10,28 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
       {/* Title */}
       <div>
         <h1 className="text-xl md:text-2xl font-extrabold text-foreground leading-tight">
-          Escova Alisadora de Cabelo 5 em 1 Sem Fio PureGlam
+          🪞 Tinta Espelho – Efeito Reflexo Ultra
         </h1>
+        <p className="text-sm text-muted-foreground mt-1">Transforma paredes em espelho!</p>
         <div className="flex items-center gap-2 mt-1.5">
           <div className="flex">
             {[1, 2, 3, 4, 5].map((s) => (
               <Star key={s} size={14} className="fill-store-yellow text-store-yellow" />
             ))}
           </div>
-          <span className="text-xs text-muted-foreground">1475 avaliações</span>
-          <span className="text-xs text-muted-foreground">| 8462 vendidos</span>
+          <span className="text-xs text-muted-foreground">2.341 avaliações</span>
+          <span className="text-xs text-muted-foreground">| 5.780 vendidos</span>
         </div>
         <span className="inline-block mt-2 bg-store-blue/10 text-store-blue text-xs font-bold px-2 py-0.5 rounded">
           LOJA 100% BRASILEIRA 🇧🇷
         </span>
       </div>
 
-      {/* Color Selector */}
-      <div className="space-y-2">
-        <span className="text-sm font-semibold text-foreground">Cor:</span>
-        <div className="flex gap-3">
-          <button
-            onClick={() => onColorChange("rosa")}
-            className={`w-10 h-10 rounded-full border-2 transition ${
-              selectedColor === "rosa" ? "border-store-blue ring-2 ring-store-blue/30" : "border-border"
-            }`}
-            style={{ background: "linear-gradient(135deg, #f472b6, #ec4899)" }}
-            title="Rosa"
-          />
-          <button
-            onClick={() => onColorChange("preto")}
-            className={`w-10 h-10 rounded-full border-2 transition ${
-              selectedColor === "preto" ? "border-store-blue ring-2 ring-store-blue/30" : "border-border"
-            }`}
-            style={{ background: "linear-gradient(135deg, #404040, #1a1a1a)" }}
-            title="Preto"
-          />
-        </div>
-      </div>
-
       {/* Price */}
       <div className="bg-card rounded-lg p-4 space-y-1.5 border border-border">
         <div className="flex items-center gap-3">
           <span className="bg-store-green text-primary-foreground text-xs font-bold px-2 py-0.5 rounded">
-            ECONOMIZE R$ 87,83
+            PROMOÇÃO DE LANÇAMENTO 🔥
           </span>
           <button onClick={() => setLiked(!liked)}>
             <Heart
@@ -67,12 +40,12 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
             />
           </button>
         </div>
-        <p className="text-sm text-muted-foreground line-through">R$ 97,90</p>
+        <p className="text-sm text-muted-foreground line-through">R$ 197,90</p>
         <p className="text-3xl font-black text-store-green">
-          R$ 10,07
+          R$ 89,90
         </p>
         <p className="text-xs text-muted-foreground">
-          ou 3x de <span className="font-bold">R$ 3,36</span> sem juros
+          ou 3x de <span className="font-bold">R$ 29,97</span> sem juros
         </p>
       </div>
 
@@ -95,13 +68,12 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
       {/* Urgency */}
       <div className="bg-store-orange/10 rounded-lg p-3 border border-store-orange/30">
         <p className="text-sm font-bold text-store-orange">
-          🔥 Corra! Restam só 3 unidades. Garanta já!
+          🔥 Corra! Restam só 7 unidades do lote promocional. Garanta já!
         </p>
       </div>
 
-      {/* Quantity + Buy */}
+      {/* Buy */}
       <div className="space-y-3">
-
         <a
           href="https://adsroi.com.br/checkout/h20NOn?aff=[ID_AFILIADO]"
           target="_blank"
@@ -109,7 +81,7 @@ const ProductInfo = ({ selectedColor, onColorChange }: ProductInfoProps) => {
           className="w-full bg-store-green hover:bg-store-green-dark text-primary-foreground font-extrabold text-lg py-4 rounded-lg transition-all animate-pulse-green flex items-center justify-center gap-2"
         >
           <ShoppingCart size={22} />
-          Comprar Agora
+          QUERO MINHA TINTA ESPELHO AGORA
         </a>
 
         <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">

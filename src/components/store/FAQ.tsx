@@ -1,11 +1,11 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Os resultados são rápidos?", a: "Sim! Com apenas uma passada você já nota a diferença. Em poucos minutos seu cabelo fica liso, brilhoso e sem frizz." },
-  { q: "Como usar?", a: "Basta ligar a escova, esperar aquecer (cerca de 30 segundos) e escovar o cabelo normalmente. Simples assim!" },
-  { q: "É seguro usar?", a: "Totalmente! A escova possui tecnologia anti-queimadura com cerdas isolantes que protegem o couro cabeludo." },
+  { q: "Como funciona a Tinta Espelho?", a: "A Tinta Espelho possui micropartículas metálicas que criam um efeito reflexivo na parede. Basta aplicar como uma tinta comum com rolo ou pincel, e após a secagem a parede ganha um acabamento espelhado impressionante." },
+  { q: "Quanto rende uma lata?", a: "Uma lata rende aproximadamente 10m² de parede, ideal para uma parede de destaque em sala, quarto ou corredor." },
+  { q: "É difícil aplicar?", a: "Não! A aplicação é simples como uma tinta comum. Basta preparar a superfície, aplicar 2-3 demãos e aguardar a secagem. Qualquer pessoa consegue fazer." },
   { q: "Envia pra minha cidade?", a: "Sim! Enviamos para todo o Brasil com frete grátis. Entrega em até 5 dias úteis." },
-  { q: "Envio & Garantia", a: "Oferecemos garantia de 30 dias de satisfação. Se não gostar, devolvemos seu dinheiro." },
+  { q: "Tem garantia?", a: "Oferecemos garantia de 30 dias de satisfação. Se não gostar do resultado, devolvemos seu dinheiro." },
 ];
 
 const FAQ = () => {
