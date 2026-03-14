@@ -12,7 +12,7 @@ const ProductInfo = () => {
         <h1 className="text-xl md:text-2xl font-extrabold text-foreground leading-tight">
           🪞 Tinta Espelho – Efeito Reflexo Ultra
         </h1>
-        <p className="text-sm text-muted-foreground mt-1">Transforma paredes em espelho!</p>
+        <p className="text-sm text-muted-foreground mt-1">Transforma paredes em espelho! | <span className="font-bold">3,6 litros</span></p>
         <div className="flex items-center gap-2 mt-1.5">
           <div className="flex">
             {[1, 2, 3, 4, 5].map((s) => (
