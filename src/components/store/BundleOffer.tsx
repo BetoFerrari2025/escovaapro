@@ -62,7 +62,7 @@ const BundleOffer = () => {
             className="mt-3 w-full bg-store-green hover:bg-store-green-dark text-primary-foreground font-extrabold py-3 rounded-lg transition flex items-center justify-center gap-2"
           >
             <ShoppingCart size={18} />
-            Comprar junto - R$ 67,90
+            Comprar junto - R$ 47,90
           </a>
 
           <div className="mt-3 space-y-1.5 text-xs text-foreground/70">
