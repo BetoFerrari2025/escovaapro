@@ -1,13 +1,11 @@
 import { useState } from "react";
 
 const ProductDescription = () => {
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <section className="bg-store-blue-dark rounded-lg p-4 md:p-6 text-primary-foreground">
       <h2 className="text-lg font-extrabold mb-3">Informações do produto</h2>
 
-      <div className={`space-y-4 text-sm leading-relaxed ${!expanded ? "max-h-40 overflow-hidden relative" : ""}`}>
+      <div className="space-y-4 text-sm leading-relaxed">
         <h3 className="text-base font-extrabold text-store-yellow">
           ✨ TRANSFORME QUALQUER PAREDE EM UM ESPELHO LUXUOSO
         </h3>
