@@ -51,6 +51,18 @@ const ProductDescription = () => {
           <li>✨ Acabamento metálico premium</li>
           <li>✨ Parede com efeito espelho realista</li>
         </ul>
+
+        {/* Imagens de resultado */}
+        <div className="grid grid-cols-2 gap-3 mt-4">
+          <img src={gifResultado1} alt="Resultado tinta espelho - efeito reflexo" className="w-full rounded-lg" />
+          <img src={gifResultado2} alt="Resultado tinta espelho - aplicação" className="w-full rounded-lg" />
+        </div>
+        <div className="grid grid-cols-3 gap-3 mt-3">
+          <img src={resultado1} alt="Resultado espelho 1" className="w-full rounded-lg object-cover aspect-square" />
+          <img src={resultado2} alt="Resultado espelho 2" className="w-full rounded-lg object-cover aspect-square" />
+          <img src={resultado3} alt="Resultado espelho 3" className="w-full rounded-lg object-cover aspect-square" />
+        </div>
+
         <p className="opacity-90 italic">
           Seus visitantes vão perguntar: "Que espelho gigante é esse na parede?"
         </p>
