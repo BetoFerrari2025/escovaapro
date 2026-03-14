@@ -1,13 +1,11 @@
 import { useState } from "react";
 
 const ProductDescription = () => {
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <section className="bg-store-blue-dark rounded-lg p-4 md:p-6 text-primary-foreground">
       <h2 className="text-lg font-extrabold mb-3">Informações do produto</h2>
 
-      <div className={`space-y-4 text-sm leading-relaxed ${!expanded ? "max-h-40 overflow-hidden relative" : ""}`}>
+      <div className="space-y-4 text-sm leading-relaxed">
         <h3 className="text-base font-extrabold text-store-yellow">
           ✨ TRANSFORME QUALQUER PAREDE EM UM ESPELHO LUXUOSO
         </h3>
@@ -76,17 +74,7 @@ const ProductDescription = () => {
           Qualquer ambiente fica mais luxuoso imediatamente.
         </p>
 
-        {!expanded && (
-          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-store-blue-dark to-transparent" />
-        )}
       </div>
-
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="mt-3 bg-store-green hover:bg-store-green-dark text-primary-foreground font-bold text-sm py-2.5 px-6 rounded-lg transition"
-      >
-        {expanded ? "Mostrar menos" : "Mostrar mais"}
-      </button>
     </section>
   );
 };
