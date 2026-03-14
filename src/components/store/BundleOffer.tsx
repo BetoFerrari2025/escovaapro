@@ -27,13 +27,13 @@ const BundleOffer = () => {
         {/* Product 2 */}
         <div className="bg-muted rounded-lg p-3 text-center relative">
           <span className="absolute -top-2 -left-2 bg-store-green text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded">
-            R$ 89,90
+            R$ 39,90
           </span>
           <div className="w-20 h-20 mx-auto">
             <img src={tintaEspelho3} alt="Tinta Espelho" className="w-full h-full object-contain" />
           </div>
           <p className="text-xs font-bold mt-2 text-foreground">Tinta Espelho - 1 Lata</p>
-          <p className="text-xs text-muted-foreground">R$ 89,90</p>
+          <p className="text-xs text-muted-foreground">R$ 39,90</p>
         </div>
 
         <span className="text-2xl font-black text-muted-foreground text-center">=</span>
