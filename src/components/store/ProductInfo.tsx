@@ -42,10 +42,10 @@ const ProductInfo = () => {
         </div>
         <p className="text-sm text-muted-foreground line-through">R$ 197,90</p>
         <p className="text-3xl font-black text-store-green">
-          R$ 89,90
+          R$ 39,90
         </p>
         <p className="text-xs text-muted-foreground">
-          ou 3x de <span className="font-bold">R$ 29,97</span> sem juros
+          ou 3x de <span className="font-bold">R$ 13,30</span> sem juros
         </p>
       </div>
 
