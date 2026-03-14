@@ -74,17 +74,7 @@ const ProductDescription = () => {
           Qualquer ambiente fica mais luxuoso imediatamente.
         </p>
 
-        {!expanded && (
-          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-store-blue-dark to-transparent" />
-        )}
       </div>
-
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="mt-3 bg-store-green hover:bg-store-green-dark text-primary-foreground font-bold text-sm py-2.5 px-6 rounded-lg transition"
-      >
-        {expanded ? "Mostrar menos" : "Mostrar mais"}
-      </button>
     </section>
   );
 };
